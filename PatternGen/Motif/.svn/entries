@@ -1,0 +1,52 @@
+8
+
+dir
+435
+http://www.ii.uib.no/svn/lenhard/TFBS/TFBS/PatternGen/Motif
+http://www.ii.uib.no/svn/lenhard
+
+
+
+2008-01-24T20:21:25.772223Z
+8
+chrb
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+92b4b857-2e4f-4894-b4a8-5712848ce9df
+
+Matrix.pm
+file
+
+
+
+
+2009-08-07T13:10:57.000000Z
+5f311726eab66b4f40d922e770de5930
+2008-01-24T20:21:25.772223Z
+8
+chrb
+
+Word.pm
+file
+
+
+
+
+2009-08-07T13:10:57.000000Z
+05996413e6ae07f300c9a6bae206d4bb
+2008-01-24T20:21:25.772223Z
+8
+chrb
+

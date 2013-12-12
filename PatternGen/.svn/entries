@@ -1,0 +1,118 @@
+8
+
+dir
+435
+http://www.ii.uib.no/svn/lenhard/TFBS/TFBS/PatternGen
+http://www.ii.uib.no/svn/lenhard
+
+
+
+2008-01-24T20:21:25.772223Z
+8
+chrb
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+92b4b857-2e4f-4894-b4a8-5712848ce9df
+
+Gibbs.pm
+file
+
+
+
+
+2009-08-07T13:10:58.000000Z
+5dfe55dc5e474abf13353d6371bfb056
+2008-01-24T20:21:25.772223Z
+8
+chrb
+
+AnnSpec.pm
+file
+
+
+
+
+2009-08-07T13:10:58.000000Z
+c12e1394e2c7ed39608ad57960adf7f1
+2008-01-24T20:21:25.772223Z
+8
+chrb
+
+MEME
+dir
+
+Elph.pm
+file
+
+
+
+
+2009-08-07T13:10:58.000000Z
+b28cb34f5e5efeef3e20b026b5e03f71
+2008-01-24T20:21:25.772223Z
+8
+chrb
+
+Gibbs
+dir
+
+YMF.pm
+file
+
+
+
+
+2009-08-07T13:10:58.000000Z
+7531fcf49cc6018822dc6b1c94bf18c3
+2008-01-24T20:21:25.772223Z
+8
+chrb
+
+AnnSpec
+dir
+
+SimplePFM.pm
+file
+
+
+
+
+2009-08-07T13:10:59.000000Z
+8b2431fd45966d310acbea1d31f85fd7
+2008-01-24T20:21:25.772223Z
+8
+chrb
+
+Elph
+dir
+
+YMF
+dir
+
+Motif
+dir
+
+MEME.pm
+file
+
+
+
+
+2009-08-07T13:10:59.000000Z
+69957d56c278eb8223d648e07f70f27f
+2008-01-24T20:21:25.772223Z
+8
+chrb
+
