@@ -1,0 +1,46 @@
+Changes in 0.3.1:
+================
+* Available as two distributions 
+	0.3.1s - for use with current stable (0.7.*) release of bioperl
+	0.3.1d - for use with development (currently 1.0.alpha) release
+	         of bioperl; produced using patches kindly provided by
+		 Jason Stajich
+
+* Added POD documentation for 
+	* Iterator method in TFBS::MatrixSet,
+          TFBS::SiteSet and TFBS::SitePairSet	
+	* search_seq and search_aln methods in TFBS::MatrixSet
+
+* TFBS::Matrix::PWM : fixed bug in handling -seqstring parameter
+  passed to the search_seq method
+
+* TFBS::Matrix::* : fixed bug in handling -matrixstring parameter
+  passed to the constructor
+
+
+
+Changes in 0.3.0:
+================
+* All aggregate classes (TFBS::MatrixSet, TFBS::SiteSet 
+  and TFBS::SitePairSet) have iterators with uniform interface.
+
+* added search_aln method to TFBS::MatrixSet, making possible 
+  phylogenetic footprinting scans with sets of matrices
+
+* Removed absolute requirement for the GD.pm module: its import is 
+  deferred until the first call of draw_logo method of TFBS::Matrix 
+  subclasses. Package test suite now does not require it, either.
+
+* Changes in Makefile.PL: it now very clearly notifies user about 
+  missing prerequisute modules.
+    
+*  Improved documentation: added README and CHANGES files, and data 
+   model information for JASPAR2 database in TFBS::DB::JASPAR2 POD
+    
+*  More example scripts included in the distribution (see below)
+    
+*  Fixed quite a few bugs, mainly in TFBS::DB::FlatFileDir and aggregate 
+classes
+
+
+

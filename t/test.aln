@@ -1,0 +1,139 @@
+CLUSTAL alignment of sequences Human_IR and Mouse_IR
+
+
+Human_IR             TCAGAGATGTCCACCTGCGCCCTATTCGAGGTCTCCGGCGTCTTCTTTGGCGTCGTCTTT
+Mouse_IR             ------------------------------------------------------------
+                                                                                 
+
+Human_IR             GCCCTTTCAGAAGCGTCTGCACATTTTTCCAGGTGTCATTTCTCCAACTTGAACACAGGG
+Mouse_IR             ------------------------------------------------------------
+                                                                                 
+
+Human_IR             AGCGCACTGGGCACGCGGGCACGTGGCTGTCCCCAGGGGCCTGGCTTGGGTCTCGCCCCT
+Mouse_IR             ------------------------------------------------------------
+                                                                                 
+
+Human_IR             GGGCCGGGGCGCACGCGCGGGCGGGACATCTGGGGGCGCCCACGCGCTCTGGGACGAGTG
+Mouse_IR             ------------------------------------------------------------
+                                                                                 
+
+Human_IR             TCGCTGGCCAGGCCCGGACTGAGGAAAGGCGAGTGAGACACTACTCGCCTGGGGTGCAAA
+Mouse_IR             ------------------------------------------------------------
+                                                                                 
+
+Human_IR             ATTTAAGGGAGTGAAAAAAAAAAAAAAAGAAAGAAACCAAAACCACCTCGAGTCACCAAA
+Mouse_IR             ------------------------------------------------------------
+                                                                                 
+
+Human_IR             ATAAACATTTTAATGCAGTATTTTTTAAAAAATCAACAGGAATCCTCCAAAGCCCACTAT
+Mouse_IR             --------------------------------------------CCACGGGAGTCAAAAA
+                                                                 *  *      **  * 
+
+Human_IR             GAACAAAATAGCAAAATGGTAGAGAAAGGATCTGTGCCGCTGCGTCGGGCCTGT------
+Mouse_IR             AATAGTAAAAAGGAGTAAAGAAAGACAAAATGTGCTTGGTTGAATCTGGCATCTAGGGCA
+                      *    ** *   *      * *** *  ** **    * **  ** *** * *      
+
+Human_IR             ------------------------------------------------------------
+Mouse_IR             TATTGGGGTGTTTATGTCCTGGGGTATCTGGCGGCATTTCCAGACTTTAAAATTGTTATT
+                                                                                 
+
+Human_IR             --G---------------------------------------------------------
+Mouse_IR             TCGGGGTAATTTGGGGTGTCTCGCTCTGGCGGAGATCTAGAGTGTGCTCCAGACCTTTAA
+                       *                                                         
+
+Human_IR             ------------------------------------------------------------
+Mouse_IR             ATTGGAACCTCGGTGTTACTTGTGTTTGCTGCAGTCAGGAGGGGACCTGGGGGCGTCCCT
+                                                                                 
+
+Human_IR             ------------------------------------------------------------
+Mouse_IR             AGGCTTTTAAACTGGAACCTCAGGCCTGTTTAGTGGTTTTCGAGTCAGGCGGGGATCTGG
+                                                                                 
+
+Human_IR             ------------------------------------------------------------
+Mouse_IR             GGACCCCTAGGTTTTAAAATCGGAACTTTGGGACTCTTTGGGGGCGTTCGTGTCAGGTGC
+                                                                                 
+
+Human_IR             ------GGGCGCCTCCGGGGGTCTGAAACTGGAG--------------------------
+Mouse_IR             GGATATGGGCAGCTCCGGACGTTTGACAGGTGAGTCTTAGAGTTGTTTGGGTGTTTATGT
+                           ****  ******  ** *** *   ***                          
+
+Human_IR             ------------------------------------------------------------
+Mouse_IR             TACACTGGTATCTGAGAACGCTTACAAGCTTTTAAATCGTAATCTTTCTAAGCCAGCAGT
+                                                                                 
+
+Human_IR             --------------------------------------------------------GAGA
+Mouse_IR             TCGGGGTGTTGGGATTGGAAGAATCTGAAGTGAGCCTCGGGTCTCTGAAGTTGCGGGTTT
+                                                                             *   
+
+Human_IR             CTCGGGGCTGTAGGGCGCGCGGATCTGGGGCGCGCCCTCGGTCCCGGCGCGCCCAGGGCC
+Mouse_IR             TACGGGGC----------------------------------------------------
+                       ******                                                    
+
+Human_IR             TCCCGCGCGGGGCCCGGCACAGGGAGGCGGGGAGGCGGGCGGGGCGGGGCG-----GGAC
+Mouse_IR             ----AAGGGGGAAAGGGGCCGAGGAGGCGAGGAGGCGAG-GAGGCGTGGCGTTGCCAGCT
+                           * ***    **  *  ******* ******* * * **** ****      *  
+
+Human_IR             CGGGCGGCACCTCCC--TCCCCTGCAAGCTTT----CCCTCCCTCTCC--TGGGCCTCTC
+Mouse_IR             CTGGCCACGCCTCCCCGAGCTCTGCTGGCTTTCTCCCCCTCCCCCCCCAGCGGGCCTCAC
+                     * ***  * ******    * ****  *****    ******* * **   ******* *
+
+Human_IR             CCGGGCGCAGAGTCCCTTCCTAGGCCAGATCCGCGCCGCCTTTTCCCGCGGCCCGCACGG
+Mouse_IR             TGGAGCGCACAGTCCCTTCCCTGTCTTAATCCGCGCCACCTTTTCCCTTGGCCCGCGCGG
+                       * ***** **********  * *   ********* *********  ******* ***
+
+Human_IR             GGCCCAGCTGACGGGCCGCGTTGTTTACGGGCCGGAG-C-AGCCCTCTCTCCCGCCGCCC
+Mouse_IR             G-CCCAGCTGACGGGCTGCGTTGTTTACGGGCTGGAGTCGAGCCCTAGCTCCCGCCGCC-
+                     * ************** *************** **** * ******  *********** 
+
+Human_IR             GCCCGCCACCCGCCAGCCCAGGTGCCCGCCCGCCAGTCAGCTAGTCCGTCGGTCCGCGCG
+Mouse_IR             --------ACCACCAGCCCAGGTGCCC--------------------TCCAGTGCGCGCG
+                              ** ***************                      * ** ******
+
+Human_IR             TCCCTCTGTCCCGGAGCCCGCAGATCGCGACCCAGAGCGCGCGGGGCCGAGAGCCGAGAG
+Mouse_IR             TCCCTCTGTCTCAGACTCCACACAACGCGACCCA--------------------------
+                     ********** * **  ** ** * *********                          
+
+Human_IR             ACAGTCCCG----------------------------------------GGCGCAGCGCG
+Mouse_IR             ------CCCAGAGCTGCACGGAGGGCAGAAGCAGGAGACCCGGACAGGAGACGCACCGCG
+                           **                                         * **** ****
+
+Human_IR             GAG--CTCCGGGCCCCGAGATCCTGGGACGGGGCCCGGGCCGCAGCGGCCGGGGGGTCGG
+Mouse_IR             GTGAGCTCTGGACTCTGGGATTGCGGGCAC----------------------------GG
+                     * *  *** ** * * * ***   ***                               **
+
+Human_IR             GGCC-------ACCACCGCAAGGGCCTCCGCTCAGTATTTGTAGCTGGCGAAGCCGCGCG
+Mouse_IR             GACCGGGCCTGGGTGACCTGCGGGCCGCGCCACGGTGTTGCTTGCGGCCGAGGCCTCT-G
+                     * **            *    ***** *  * * ** **  * ** * *** *** *  *
+
+Human_IR             CGCCCTTCCCGGGGCTG-CCTCTGGGCCCTCCCCGGCAGGGGGGCTGCGGCCCGCGGGTC
+Mouse_IR             TGCTCTTCCCGGGACTGTCCCCAGGGCCCT-CTAGGCTGGAGAGCTGCGGCCTGTGAGCC
+                      ** ********* *** ** * ******* *  *** ** * ********* * * * *
+
+Human_IR             GCGGGCGTGGAAGAGAAGGACGCGCGGCCCCCAGCGCCTCTTGGGTGGCCG-C-CTCGGA
+Mouse_IR             ACGGGCGTGGAAGAGAAGGACGTGCGGCCCCGAGCGCCTCTCCAGAGACCTTCTCACGGA
+                      ********************* ******** *********   * * **  * * ****
+
+Human_IR             GCATGACCCCCGCGGGCCAGCGCCGCGCGCTCTGATCCGAGGAGACCCCGCGCTCCCGCA
+Mouse_IR             GTATGTCCCCAGTAGGCCGGCGTGGCGTGCTCTGATCGCCGGGGTCCCAGCACTCCTACT
+                     * *** **** *  **** ***  *** *********   ** * *** ** ****  * 
+
+Human_IR             GCCATGGGCACCGGGGGCCGGCGGGGAG-CGGCGGCCGCGCCGCTGCTGGTGGCGGTGGC
+Mouse_IR             GCTATGGGCTTCGGGAGA-GGATGTGAGACGACGGCTGTGCCATTGCTGGTGGCCGTGGC
+                     ** ******  **** *  **  * *** ** **** * ***  ********** *****
+
+Human_IR             CGCGCTGCTACTGGGCGCCGCGGGCCACCTGTACCCCGGAGAGGGTGAGTCTGGGGGCGC
+Mouse_IR             CGCGTTGCTGGTGGGCACAGCCGGCCACCTGTACCCTGGAGAGGGTAAGTCTGG------
+                     **** ****  ***** * ** ************** ********* *******      
+
+Human_IR             GGGCGTGGGCGGGGAGCGCCGCGATGGGGAGAGGACCCCACCCAAGCCAAAATCGATCCC
+Mouse_IR             ------------------------------------------------------------
+                                                                                 
+
+Human_IR             CCGCTTGTGGACTGAGAACCCTCCCCAGGGGCGGGGGGCGGTGGCCAGGACGGTAGCTCC
+Mouse_IR             ------------------------------------------------------------
+                                                                                 
+
+Human_IR             TGCATCGCGTAGGGGGAGCGGGAAGC
+Mouse_IR             --------------------------
+                                               
+

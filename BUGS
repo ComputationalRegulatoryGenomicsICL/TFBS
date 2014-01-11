@@ -1,0 +1,11 @@
+Known Bugs 
+
+TFBS 0.3.0 
+=============
+ * TFBS::PatternGen::Gibbs sometimes emits an "unequal column counts"
+   warning. This is a result of sporadic roundoff errors due to information 
+   loss when converting form Gibbs percentage matrices to PFMs. We are 
+   working on a more inteligent conversion procedure, while trying to
+   persuade the authors of Gibbs program to include standard PFMs in the 
+   program's output.
+
