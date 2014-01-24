@@ -477,13 +477,19 @@ sub get_MatrixSet  { # IC conetent and matrix stuff is not there yet, rest shoul
 	    # unless it explicitly says otherwise in tag=matrixtype
 	    # if so warn and do not use IC content
 	    # this is not foolproof in any way
-	    if ( $matrix->{tags}{matrixtype} eq "ICM"){
-		next if ( $matrix->total_ic() < $args{'-min_ic'});   
-	    }
-	    elsif ($matrix->isa("TFBS::Matrix::PFM")){
-                next if ( $matrix->to_ICM->total_ic() < $args{'-min_ic'});     
-            }
-	
+      #
+      # Fixed up logic to actually check $matrix->isa(TFBS::Matrix::ICM)
+      # before checking the matrixtype tag. Also check that matrixtype
+      # tag is defined before comparison to prevent annoying "Use of
+      # uninitialized value in string eq" messages from perl.
+      # DJA 2012/05/11
+      if ($matrix->isa("TFBS::Matrix::ICM")
+        || (   defined $matrix->{tags}{matrixtype}
+          && $matrix->{tags}{matrixtype} eq "ICM")){
+        next if ( $matrix->total_ic() < $args{'-min_ic'});
+      } elsif ($matrix->isa("TFBS::Matrix::PFM")){
+        next if ( $matrix->to_ICM->total_ic() < $args{'-min_ic'});
+      }
 	    else{	
 		warn "Warning: you are assessning information content on matrices that are not in PFM or ICM format.Skipping this criteria";
 		next;
