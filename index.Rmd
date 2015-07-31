@@ -1,0 +1,151 @@
+---
+author: "Boris Lenhard"
+output: html_document
+---
+![](/Users/gtan/Repos/github/TFBS/TFBS.png)
+
+**Boris Lenhard**
+
+b.lenhard at imperial.ac.uk
+
+[Computational Regulatory Genomics](http://group.genereg.net/), 
+[MRC Clinical Sciences Centre](http://csc.mrc.ac.uk/), United Kingdom
+
+# Introduction
+TFBS Perl OO modules implement classes for the representation of objects encountered in analysis of protein-binding sites in DNA sequences.The objects defined by TFBS classes include:
+
+* pattern definition objects, currently position specific score matrices (raw frequency, information content and position weight matrices)with methods for interconversion between matrix types, sequence searching with a matrix profile, sequence 'logo' drawing and matrix manipulation;
+* a composite object representing a set of position specific score matrices, with methods for the identification of motifs within DNA sequences with the set of profiles from its member matrices;
+* methods for searching pairwise alignments for patterns conserved in both sequences (phylogenetic footprinting) defined for both matrix profile and composite (matrix set) objects;
+* an object representing DNA binding site sequence, and an object representing sets of DNA binding sequences, with methods and helper classes to facilitate scanning, filtering and statistical analyses;
+* an object representing a pair of DNA binding site sequences, and an object representing a set of such pairs, for storage, manipulation and analysis of phylogenetic footprinting searches;
+* database interfaces to relational, flat file and WWW database of position-specifc score matrices, with methods for searching existing databases, as well as creating new ones containing user-defined matrices.
+* interfaces to matrix pattern generating programs
+
+The modules within the TFBS set are fully integrated and compatible with [Bioperl](http://www.bioperl.org/wiki/Main_Page).
+
+# Download
+The current release of TFBS is 0.6.1 (January 24, 2014). 
+It has been tested on Linux 2.4 (i686 and alpha) and 2.6 (i686) with perl 5.6.1 
+and 5.8.5, and on Sun Solaris with perl 5.8.3. 
+The tarball is here: [TFBS-0.6.1.tar.gz](http://tfbs.genereg.net/TFBS-0.6.1.tar.gz).
+
+# Citing TFBS
+If you use TFBS in your work, please cite :
+ 
+Lenhard B., Wasserman W.W. (2002) TFBS: Computational framework for transcription factor binding site analysis. Bioinformatics 18:1135-1136 [View Abstract](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=12176838)
+
+# Git repository
+To check out the latest development snapshot of TFBS, do
+
+git clone https://github.com/genereg/TFBS.git
+
+#  Recent changes
+Changes in 0.6.1: 
+
+* Fix a bug of testing matrix type in get_MatrixSet of JASPAR6.pm
+
+Changes in 0.6.0:
+
+* Database interface for JASPAR 2014
+
+Changes in 0.5.0: 
+
+* TFBS::Matrix::ICM 
+    + Fixed the x-axis label clutter problem in logos
+    + Added experimental support for vector logos in PDF format (still buggy)
+* TFBS::Matrix::PWM
+    + Improved alignment search using the new TFBS::Run::ConservationProfileGenerator and TFBS::ConservationProfile modules
+* New modules for running popular pattern discovery programs: TFBS::PatternGen::MEME, TFBS::PatternGen::Elph and TFBS::PatternGen::YSF
+* Compiled sequence search extension: removed obsolete C declarations that caused compile errors under Cygwin
+* TFBS::SitePair: fixed incompatibility with new versions of Bio::SeqFeature::FeaturPair module from bioperl
+* A number of smaller bugfixes
+
+Changes in 0.4.1: 
+
+* TFBS::DB::LocalTRANSFAC : Added support for the most recent format of TRANSFAC's matrix.dat file (contributed by Leonardo Marino-Ramirez).
+* Fixed the regression tests for TFBS::PatternGen::Gibbs so they do not fail miserably if Gibbs binary cannot be found.
+* New TFBS::PatternGen::AnnSpec module.
+
+Changes in 0.4.0: 
+
+* Support for arbitraty nucleotide backgrounds and small sample correction for conversion of PFMs to PWMs 
+* Enhanced TFBS::PatternGen::Gibbs wrapper - stores many more output results than the previous version
+* New functionality for logo drawing (error bars) 
+
+# Installation
+The installation procedure is fairly standard:
+
+```{r eval=FALSE}
+$ tar xvfz TFBS-0.6.1.tar.gz
+$ cd TFBS-0.6.1
+$ perl Makefile.PL
+```
+
+At this point you will be asked for MySQL server acces information, which is needed for testing the TFBS::DB::JASPAR6 module. If you do not have write access to a MySQL server, just answer 'no' to the first question. 
+
+```{r eval=FALSE}
+$ make
+```
+
+TFBS contains a perlxs extension which is a (at present quick and dirty) adaptation of a short C program pwm_search by James Fickett and Wyeth Wasserman, used for searching a DNA sequence against a position weight matrix. It is included for performance reasons. (For developers: there is also a currently undocumented way to make TFBS::Matrix::PWM's search methods work without the extension. For details, contact the author (or wait for the more extensive documentation of TFBS guts to appear. The latter is not recommended :) ) 
+
+```{r eval=FALSE}
+$ make test
+```
+
+The test suite is not omnipotent. For access to TRANSFAC, the TFBS::DB::TRANSFAC assumes that Internet connection is present and no proxy is required. Test of TFBS::PatternGen::Gibbs is skipped if Gibbs executable is not found in the PATH. 
+
+```{r eval=FALSE}
+$ su
+$ make install
+```
+
+Any questions? Write to b.lenhard at imperial.ac.uk.
+ 
+# Dependencies
+## Absolutely required
+
+* Perl 5.6.1 or later 
+* bioperl 1.0 or newer
+* [PDL](http://pdl.perl.org/) 1.1 or later (Note for Linux users: PDL is available as a RPM package for most major Linux distributions. Since some TFBS testers were severely frustrated by problems they encountered compiling PDL, I recommend the use of binary RPMs where possible. Solaris users should upgrade to perl 5.8 and compile it without thread support for PDL or database connectivity to work. These issues are unrelated to TFBS code.) 
+
+Note for RedHat 9 users: RedHat 9 is badly broken in several important respects. (1) The PDL installed from a rpm package shipped with RedHat 9 issues "Possible precedence problem" warnings (probably harmless). (2) Some users have had trouble compiling PDL from CPAN. If you try to install PDL from CPAN shell and get the warning "I could not locate your pod2man program..." and the error "Makefile:93: *** missing separator.", you should unset your $LANG environmental variable before starting the CPAN shell:
+
+```{r eval=FALSE}
+$ unset LANG 
+```
+The above is strictly a RedHat configuration issue, and is unrelated to TFBS code.
+
+## Optional
+
+* [GD](http://libgd.github.io/) 1.3 or later (only required by TFBS::Matrix::ICM for drawing sequence logos)
+* DBI and DBD::MySQL modules, as well as access to a mysql server (only required for storage and retrieval matrix objects in a MySQL database by TFBS::DB::JASPAR2)
+* Gibbs, a program by the group of C.L. Lawrence for matrix pattern generation from a set of nucleotide sequences (only required by TFBS::PatternGen::Gibbs module); write to Dr. Lawrence to obtain a copy
+* ELPH, A Gibbs sampler from TIGR
+* [MEME](http://meme-suite.org/), a popular program for pattern discovery, based on an EM algorithm
+
+Bioperl, GD, DBI, DBD::mysql and PDL are also available from CPAN.
+
+# Example scripts
+Here are two very simple code snippets that demonstrate some of the TFBS functionality. 
+
+* [Script1](http://tfbs.genereg.net/examples/script1.pl): a script that retrieves a sequence from GenBank using BioPerl, a C/EBP position weight profile from TRANSFAC, scans the sequence with the matrix and outputs the detected sites in GFF format. 
+* [Script2](http://tfbs.genereg.net/examples/script2.pl): a script that identifies new patterns from a set of DNA sequences stored in the file sequences.fa and stores them in a simple flat -file database.
+
+The following two somewhat longer scripts have a fully functional command-line interface and annotated source code. Those who want to learn how to use TFBS are advised to study their code: 
+
+* [list_matrices.pl](http://tfbs.genereg.net/examples/list_matrices.pl): a script that displays information about matrix patterns stored in a flat file directory-type database in several different formats.
+* [phylofoot.pl](http://tfbs.genereg.net/examples/phylofoot.pl): a script that scans conserved regions of a pairwise DNA sequence alignment with a set of matrices form a flat file databases and produces GFF output.
+
+And finally, a simple CGI script: 
+
+* [viewpfm.cgi](http://tfbs.genereg.net/examples/viewpfm.cgi): a CGI script that outputs two kinds of pages: a list of matrices from a FlatFileDir database, and a detailed info page for individual matrices. The latter includes a graphical representation("sequence logo") of matrix sprcificity.
+
+# Documentation (POD)
+From here you can access  POD  documentation for the modules. It is still far from perfect, but I think it is enough for start. (Internal modules and internal methods are not yet documented.)
+
+[COMPLETE MODULE DOCUMENTATION](http://tfbs.genereg.net/DOC/)
+
+
+
