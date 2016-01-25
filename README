@@ -18,11 +18,11 @@ o About TFBS
 
 o Contact info
 
- Author: Boris.Lenhard@cgb.ki.se
+ Author: b.lenhard at imperial.ac.uk
 
- TFBS website   : http://forkhead.cgb.ki.se
+ TFBS website: http://tfbs.genereg.net/
 
- Bug reports       : contact author
+ Bug reports: https://github.com/ComputationalRegulatoryGenomicsICL/TFBS/issues
 
  Please send bug reports, in particular about documentation which you
  think is unclear or problems in installation. The author is also 
@@ -38,7 +38,7 @@ o System requirements
  - bioperl 0.7.* 
    (use the TFBS-0.3.0.DEV distribution with bioperl 0.9.*)
  - Additional perl module and application dependencies listed at
-   http://forkhead.cgb.ki.se/TFBS/
+   http://tfbs.genereg.net/
 
 
 
@@ -53,7 +53,7 @@ o Documentation
 
  POD documentation for all modules, as well as additional 
  information can be accessed from TFBS web page at
- http://forkhead.cgb.ki.se/TFBS/ .
+ http://tfbs.genereg.net/POD/.
 
  A limited amount of example code, can also be found in the 
  examples/ directory. The current collection includes scripts for 
