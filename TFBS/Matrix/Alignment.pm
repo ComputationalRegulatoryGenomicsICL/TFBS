@@ -119,7 +119,7 @@ sub new  {
     
     
     # save temp files
-    my $tmpDir = tempdir("MatAlign_XXXXXXXXX", CLEANUP => 1);
+    my $tmpDir = tempdir("MatAlign_XXXXXXXXX", CLEANUP => 1, TMPDIR => 1);
     my($fh1, $file1) = tempfile("mat_XXXXXXXX", DIR => $tmpDir, UNLINK => 1);
     print $fh1 $args{'-pfm1'}->rawprint()|| die " Cannot save temporary files for alignment";
     my($fh2, $file2) = tempfile("mat_XXXXXXXX", DIR => $tmpDir, UNLINK => 1);
