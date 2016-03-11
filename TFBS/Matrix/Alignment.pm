@@ -69,7 +69,7 @@ use vars '@ISA';
 use strict;
 use Bio::Root::Root;
 use TFBS::Matrix;
-use File::Temp qw/:POSIX tempfile tempdir/;
+use File::Temp qw/:POSIX/;
 @ISA = qw(TFBS::Matrix Bio::Root::Root);
 
 #alignment methods: for making and storing a single matrix-alignments
@@ -119,10 +119,9 @@ sub new  {
     
     
     # save temp files
-    my $tmpDir = tempdir("MatAlign_XXXXXXXXX", CLEANUP => 1, TMPDIR => 1);
-    my($fh1, $file1) = tempfile("mat_XXXXXXXX", DIR => $tmpDir, UNLINK => 1);
+    my($fh1, $file1) = tmpnam();
     print $fh1 $args{'-pfm1'}->rawprint()|| die " Cannot save temporary files for alignment";
-    my($fh2, $file2) = tempfile("mat_XXXXXXXX", DIR => $tmpDir, UNLINK => 1);
+    my($fh2, $file2) = tmpnam();
     print $fh2 $args{'-pfm2'}->rawprint()|| die " Cannot save temporary files for alignment";
  
     #align
@@ -183,7 +182,9 @@ sub new  {
          }
      }
      $self->{'_align_string'}= $string ."\n". $string2;
-   
+
+  unlink $file2;
+  unlink $file1; 
   return $self; 
 }
 
