@@ -769,7 +769,7 @@ sub _build_cluster {
  Args    : Many:
             -stampdir   Directory where stamp is located. Not necessary if it is in the PATH.
             -tempdir    Directory to put temporary files. Defaults to "/tmp"
-            -noclean    1 to clean up temporary files, 0 otherwise
+            -noclean    0 to clean up temporary files, 1 otherwise
             -tree       Method for constructing tree (UPGMA/SOTA). Def:UPGMA
 
 =cut
@@ -825,7 +825,7 @@ sub cluster {
  Args    : Many
             -stampdir   Directory where stamp is located. Not necessary if it is in the PATH.
             -tempdir    Directory to put temporary files. Defaults to "/tmp"
-            -noclean    1 to clean up temporary files, 0 otherwise
+            -noclean    0 to clean up temporary files, 1 otherwise
             -align      Alignment method
 =cut
 
