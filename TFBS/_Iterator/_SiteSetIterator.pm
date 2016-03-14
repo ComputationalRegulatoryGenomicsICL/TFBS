@@ -7,7 +7,11 @@ use TFBS::_Iterator;
 
 @ISA = qw(TFBS::_Iterator);
 
-
+#
+# Changed name field sorts to case insensitive which results in a more
+# intuitive name sort order.
+# DJA 2015/09/16
+#
 sub _sort  {
     my ($self, $sort_by) = @_;
     $sort_by or $sort_by = $self->{_sort_by} or  $sort_by = 'name';
@@ -15,11 +19,11 @@ sub _sort  {
     # we can sort by name, start, end, score
     my %sort_fn = 
 	(start => sub  { $a->start() <=> $b->start() 
-			 || $a->pattern->name() cmp $b->pattern->name()
+			 || uc $a->pattern->name() cmp uc $b->pattern->name()
 			 || $a->strand() <=> $b->strand()
 		       },
 	 end   => sub  { $a->end()   <=> $b->end()   
-			 || $a->pattern->name() cmp $b->pattern->name()
+			 || uc $a->pattern->name() cmp uc $b->pattern->name()
 			 || $a->strand() <=> $b->strand()
 		       },
 	 ID  => sub  { $a->pattern->ID() cmp $b->pattern->ID()
@@ -27,13 +31,13 @@ sub _sort  {
 			 || $a->end()   <=> $b->end()   
 			 || $a->strand() <=> $b->strand()
 		       },
-	 name  => sub  { $a->pattern->name() cmp $b->pattern->name()
+	 name  => sub  { uc $a->pattern->name() cmp uc $b->pattern->name()
 			 || $a->start() <=> $b->start() 
 			 || $a->end()   <=> $b->end()   
 			 || $a->strand() <=> $b->strand()
 		       },
 	 score => sub {  $b->score()   <=> $a->score()
-			 || $a->pattern->name() cmp $b->pattern->name()
+			 || uc $a->pattern->name() cmp uc $b->pattern->name()
 			 || $a->strand() <=> $b->strand()
 		      }
 	);
