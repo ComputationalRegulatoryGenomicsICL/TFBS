@@ -69,7 +69,7 @@ use LWP::Simple qw($ua get);
                               # have read and accepted the terms 
                               # of use of TRANSFAC at
                               # http://transfac.gbf.de/TRANSFAC/disclaimer.htm;
-                              # this also supresses the annoying
+                              # this also suppresses the annoying
                               # message that is printed to STDERR
                               # upon invoking the method
 

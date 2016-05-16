@@ -103,7 +103,7 @@ sub _run_simple {
 
   # at this point, the graph values are shifted $window_size/2 to the right
   # i.e. the score at a certain position is the score of the window
-  # UPSTREAM of it: To fix it, we shoud discard the first $window_size/2 scores:
+  # UPSTREAM of it: To fix it, we should discard the first $window_size/2 scores:
   #$self->conservation1 ([]);
     foreach my $match_point ( @graph[ int( $window_size / 2 ) .. $#graph ] ) {
         push @CONSERVATION, $match_point / $window_size;
@@ -126,7 +126,7 @@ sub _run_simple {
 
 sub _run_Malins {
     shift->throw(
-        "Not implemeted, sorry. Pick another method for the time being");
+        "Not implemented, sorry. Pick another method for the time being");
 }
 
 sub _run_align_cons {

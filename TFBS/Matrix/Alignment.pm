@@ -241,7 +241,7 @@ sub new  {
  Title   : alignment
  Usage   : my $alignment_string = $alignmentobject->alignment();
  Function: access a string describing the alignment
- Returns : an string, where each number refers to a position in repective PFM.
+ Returns : an string, where each number refers to a position in respective PFM.
  Position numbering is according to orientation: ie if the second profile is
  reversed, position 1 corresponds to the last position in the input profile.
  Gaps are denoted as - .

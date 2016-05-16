@@ -409,7 +409,7 @@ sub get_Matrix_by_name {
            database storage, any tag can be used for information retrieval.
            Additionally, arguments as 'name' and 'class' can be used (even though
            they are not tags.
-           As with get_Matrix methods, it is important to realize taht any matrix
+           As with get_Matrix methods, it is important to realize that any matrix
            format can be stored in the database: the TFBS::MatrixSet might therefore
            consist of PFMs, ICMs and PWMS, depending on how matrices are stored,
            
@@ -445,7 +445,7 @@ gives a set of TFBS::Matrix::PFM objects (given that the matrix models are store
  from is 'Homo sapiens'OR 'Mus musculus').
 
 The -min_ic filter is applied after the query in the sense that the
-matrices profiles with total infromation content less than specified
+matrices profiles with total information content less than specified
 are not included in the set.
 
 =cut

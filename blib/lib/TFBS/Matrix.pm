@@ -40,7 +40,7 @@ methods. Internal methods are preceded with an underscore.
 package TFBS::Matrix;
 use vars '@ISA';
 
-use PDL; # this dependancy has to be eliminated in the future versions
+use PDL; # this dependency has to be eliminated in the future versions
 use TFBS::PatternI;
 
 use strict;

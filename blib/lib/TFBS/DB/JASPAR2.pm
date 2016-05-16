@@ -458,7 +458,7 @@ gives a set of PWMs whose (structural clas is 'TRP_CLUSTER' OR
 OR 'Mus musculus').
 
 The -min_ic filter is applied after the query in the sense that the
-matrices profiles with total infromation content less than specified
+matrices profiles with total information content less than specified
 are not included in the set.
 
 =cut

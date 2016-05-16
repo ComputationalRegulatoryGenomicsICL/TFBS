@@ -174,7 +174,7 @@ sub _parse_raw_matrix{
     my @array=split("\n",$string);
     foreach my $line(@array){
         my $nr=0;
-        my $strand=1;#if revcomp is not selected teh strand is always 1
+        my $strand=1;#if revcomp is not selected the strand is always 1
         next if $line=~/^-/;
         next if $line=~/P-value\s+Site/;
         my (@properties)=split(/\s+/,$line);
