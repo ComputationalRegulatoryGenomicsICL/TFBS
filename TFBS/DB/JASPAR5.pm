@@ -923,7 +923,7 @@ sub _get_Matrix_by_int_id
     # get the matrix as a string
     my $matrixstring = $self->_get_matrixstring($int_id) || return undef;
     
-    #get remaining data in teh matrix table: name, collection
+    #get remaining data in the matrix table: name, collection
     my $sth=$self->dbh->prepare(qq!SELECT BASE_ID,VERSION,  COLLECTION,NAME FROM MATRIX WHERE ID="$int_id"!);
     $sth->execute();
     my ($base_ID, $version,$collection,$name)=$sth->fetchrow_array(); 

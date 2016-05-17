@@ -67,7 +67,7 @@ use Bio::SeqIO;
            Other arguments are:
             -binary       # a fully qualified path to Gibbs executable
                           #  OPTIONAL: default 'Gibbs'
-            -nr_hits      # a presumed number of pattern occurences in the
+            -nr_hits      # a presumed number of pattern occurrences in the
                           #   sequence set: it can be a single integer, e.g.
                           #   -nr_hits => 24 , or a reference to an array of
                           #   integers, e.g -nr_hits => [12, 24, 36]

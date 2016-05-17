@@ -474,7 +474,7 @@ sub _to_seqobj {
 	#return $format;
     #}
     else  {
-	$self->throw ("Wrong parametes passed to search method: ".%args);
+	$self->throw ("Wrong parameters passed to search method: ".%args);
     }
 
 

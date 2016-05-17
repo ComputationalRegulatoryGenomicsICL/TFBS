@@ -98,7 +98,7 @@ following information content matrix:
     G:[0.00  0.89  2.00  0.00  0.00  0.00]
     T:[0.00  0.00  0.00  0.13  0.06  2.00]
 
-which contains the "weights" associated with the occurence of each
+which contains the "weights" associated with the occurrence of each
 nucleotide at the given position in a pattern.
 
 A TFBS::Matrix::PWM object is equipped with methods to search nucleotide

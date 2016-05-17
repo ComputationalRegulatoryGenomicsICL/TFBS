@@ -19,7 +19,7 @@ sub _abstractDeath {
     my $package = ref $self;
     my $caller = (caller())[1];
   
-    confess "Abstract method '$caller' defined in interface TFBS::PatternGenI not implemented by pacakge $package";
+    confess "Abstract method '$caller' defined in interface TFBS::PatternGenI not implemented by package $package";
 }
 
 

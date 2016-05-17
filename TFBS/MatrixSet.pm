@@ -79,7 +79,7 @@ use constant FALSE => 0;
 
 # Hash of accepted options and their arguments for the program
 # STAMP. Reference to empty list means the option take no arguments
-# This test for legal arguments is maybe superflous and can
+# This test for legal arguments is maybe superfluous and can
 # potentially be removed.
 my %stamp_opt = (
 		 -tf => [],
@@ -597,7 +597,7 @@ sub _to_seqobj {
 	#return $format;
     #}
     else  {
-	$self->throw ("Wrong parametes passed to search method: ".%args);
+	$self->throw ("Wrong parameters passed to search method: ".%args);
     }
 
 

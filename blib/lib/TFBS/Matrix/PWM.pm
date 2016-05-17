@@ -100,7 +100,7 @@ following position weight matrix:
     G:[-1.57  1.85 -2.57 -1.34 -1.57  1.14]
     T:[ 0.31 -3.16 -2.57  1.76  0.24 -0.83]
 
-which contains the "weights" associated with the occurence of each
+which contains the "weights" associated with the occurrence of each
 nucleotide at the given position in a pattern.
 
 A TFBS::Matrix::PWM object is equipped with methods to search nucleotide
@@ -530,7 +530,7 @@ sub _to_seqobj {
 	#return $format;
     #}
     else  {
-	$self->throw ("Wrong parametes passed to search method: ".%args);
+	$self->throw ("Wrong parameters passed to search method: ".%args);
     }
 
 }

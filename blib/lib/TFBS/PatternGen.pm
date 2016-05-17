@@ -14,7 +14,7 @@ TFBS::PatternGen - a base class for pattern generators
 
 =head1 DESCRIPTION
 
-TFBS::PatternGen is a base classs providing methods common to all pattern generating
+TFBS::PatternGen is a base class providing methods common to all pattern generating
 modules. It is meant to be inherited by a concrete pattern generator, which must have its own
 constructor.
 

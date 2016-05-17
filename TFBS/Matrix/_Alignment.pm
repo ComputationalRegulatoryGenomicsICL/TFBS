@@ -201,7 +201,7 @@ sub _calculate_conservation  {
 
     # at this point, the graph values are shifted $WINDOW/2 to the right
     # i.e. the score at a certain position is the score of the window
-    # UPSTREAM of it: To fix it, we shoud discard the first $WINDOW/2 scores:
+    # UPSTREAM of it: To fix it, we should discard the first $WINDOW/2 scores:
     #$self->conservation1 ([]);
     foreach my $pos (@graph[int($WINDOW/2)..$#graph])  {
 	push @CONSERVATION, 100*$pos/$WINDOW;
