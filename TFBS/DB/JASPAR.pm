@@ -1260,7 +1260,7 @@ sub _get_Matrix_by_int_id {    #done
     my @tax_ids;
     while (my ($res) = $sth->fetchrow_array()) {
         my @res_v = split(/,/, $res);
-        my @res_v2 = grep(s/^\s*(.*)\s*$/\1/g, @res_v);
+        my @res_v2 = grep(s/^\s*(.*)\s*$/$1/g, @res_v);
         push(@tax_ids, @res_v2);
     }
 
@@ -1274,7 +1274,7 @@ sub _get_Matrix_by_int_id {    #done
     my @accs;
     while (my ($res) = $sth->fetchrow_array()) {
         my @res_v = split(/,/, $res);
-        my @res_v2 = grep(s/^\s*(.*)\s*$/\1/g, @res_v);
+        my @res_v2 = grep(s/^\s*(.*)\s*$/$1/g, @res_v);
         push(@accs, @res_v2);
     }
 
@@ -1317,7 +1317,7 @@ sub _get_Matrix_by_int_id {    #done
         $vals = [];
         if ($tag ~~ @key_to_split) {
             my @val_v = split(/,/, $val);
-            my @val_v2 = grep(s/^\s*(.*)\s*$/\1/g, @val_v);
+            my @val_v2 = grep(s/^\s*(.*)\s*$/$1/g, @val_v);
             #push(@$vals, @val_v2);
             #$tags{$tag} = $vals;
             push @{$tags{$tag}}, @val_v2;
@@ -1641,8 +1641,6 @@ sub _get_TFFM_internal_id {
 
 sub _get_TFFM_by_int_id {    #done
     my ($self, $int_id) = @_;
-
-    my $tffm;
 
     my $sth = $self->dbh->prepare(
         qq! SELECT BASE_ID, VERSION, MATRIX_BASE_ID, MATRIX_VERSION, NAME,
