@@ -1,4 +1,4 @@
-# This is the README file for TFBS modules distribution, Version 0.7.0
+# This is the README file for TFBS modules distribution, Version 0.7.1
 
 
 **NOTE**
@@ -24,8 +24,8 @@ think is unclear or problems in installation.
 The author is also interested in suggestions on directions in which TFBS functionality should be expanded.
 
 ## System requirements
-* Tested on Linux/i686, Tru64 Unix, Solaris, Mac OS 10.11.3
-* perl 5.6.1 or later
+* Tested on Linux/i686, Mac OS 10.12.3
+* perl 5.10.0 or later
 * ANSI C or Gnu C compiler for XS extensions
 * bioperl 1.0 or later
 * Additional perl module and application dependencies listed at http://tfbs.genereg.net/
