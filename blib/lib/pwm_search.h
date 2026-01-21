@@ -13,7 +13,7 @@ extern double log2();
 extern double sqrt();
 extern FILE *fopen();
 */ 
-void err_log(), err_show();
+void err_log(char*), err_show();
 
 /*---------------------------------------------------------------
  * DEFINES

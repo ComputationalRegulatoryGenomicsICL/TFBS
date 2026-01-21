@@ -156,7 +156,7 @@ int best_save(struct arguments* pargs, long base, int strand, double score)
  * 
  * Returns: 0 
  *------------------------------------------------------------------*/
-best_pull(pargs,pbase,pstrand,pscore)
+int best_pull(pargs,pbase,pstrand,pscore)
 struct arguments *pargs;  /* args from command line */
 long *pbase;         /* base where score occurs */
 int *pstrand;        /* strand where score occurs */
@@ -523,7 +523,7 @@ get_matrix(struct arguments* pargs, double* pwm)
  * 
  * Return 0 normally, -1 on error, 1 if called at EOF.
  *------------------------------------------------------------------*/
-get_sequence(fp,seq_id,sequence)
+int get_sequence(fp,seq_id,sequence)
 FILE *fp;           /* file to read */
 char *seq_id;       /* name of sequence */
 char *sequence;     /* text of sequence */
